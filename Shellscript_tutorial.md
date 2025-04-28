@@ -120,5 +120,5 @@ Bash uses a variety of special variables to refer to arguments, error codes, and
 
 Error code helps you to verify if the previous command went well if it goes without any error it gives us **0** otherwise it gives us **1** .
 Shell scripting is a powerful way to automate tasks, manage files, and control systems efficiently.
-###### **Special Variables:**
+###### **Conclusion:**
 With practice, you can turn simple commands into sophisticated scripts that make your work faster and smarter.
