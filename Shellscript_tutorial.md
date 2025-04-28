@@ -1,7 +1,7 @@
 ### SHELL SCRIPTING TUTORIAL
 ##### by Ayesha Anwar
 1. ###### **The Shell:**
-Shell is a textual interface at which we give commands to perform desired task. All platforms have shell in one form or another and many of them have several shells for you to choose from. They all may vary in detail from each other but their syntax is not so different . 
+Shell is a textual interface at which we give commands to perform desired tasks. All platforms have shell in one form or another and many of them have several shells for you to choose from. They all may vary in detail from each other but their syntax is not so different . 
 
 Shell that we will be using is **Bourne Again Shell** or **bash** for short. This is the most common used shell.   
 ###### Common Use Cases:
@@ -20,7 +20,7 @@ In order to check which shell you are using you just type the following command 
     echo "$SHELL"
     /bin/bash
 ```
-Single and double quotation marks have a great significance in shell scripting because if we type the above command in single quotes it will simply print the command that is in written in quotes but if we write that in double quotes then it will do that specific task which is supposed to do as you can see right below:
+Single and double quotation marks have a great significance in shell scripting because if we type the above command in single quotes it will simply print the command that is written in quotes but if we write that in double quotes then it will do that specific task which is supposed to do as you can see right below:
 ```bash
     echo '$SHELL'
     $SHELL
@@ -56,7 +56,7 @@ In order to remove directory which contains various files or other contents you 
 ```
 for further help you are always welcome to use man or --help command.
 ###### **Current directory:**
-I f ypu want to know in which directory you are currently in type :
+If you want to know in which directory you are currently in type :
 ```bash
     pwd
 ```
@@ -81,7 +81,7 @@ You can create files using following command:
 ```
 Keep in mind the significance of using single quotes and double quotes. You can create multiple files by using one line :
 ```bash
-    touch foo1 foo2 foo3
+    touch foo1 foo2 foo3 foo4
 ```
 ###### **Moving & renaming directory:**
 You can rename or move files like this :
