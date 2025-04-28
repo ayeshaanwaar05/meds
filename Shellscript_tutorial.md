@@ -17,7 +17,7 @@ On shell the word **directory** is used for the word **folder** we commonly use 
 2. ###### **Some Basic Commands:**
 In order to check which shell you are using you just type the following command and it will tell you which shell you are using
 ```bash
-    echo "$SHELLL"
+    echo "$SHELL"
     /bin/bash
 ```
 Single and double quotation marks have a great significance in shell scripting because if we type the above command in single quotes it will simply print the command that is in written in quotes but if we write that in double quotes then it will do that specific task which is supposed to do as you can see right below:
