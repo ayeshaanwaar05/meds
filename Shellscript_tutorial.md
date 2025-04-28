@@ -83,6 +83,11 @@ Keep in mind the significance of using single quotes and double quotes. You can 
 ```bash
     touch foo1 foo2 foo3 foo4
 ```
+One more efficient command :
+```bash
+    cat foo.txt
+```
+It is used to display, create and concatenate multiple files together.
 ###### **Moving & renaming directory:**
 You can rename or move files like this :
 ```bash
