@@ -1,5 +1,5 @@
 
-# ✅ MEDS LAB TRAINING: Module 0 Checklist
+# ✅ MEDS LAB TRAINING: Checklist
 
 - [x] Install Linux or WSL and choose preferred setup
 - [x] Learn to use the Vim editor
