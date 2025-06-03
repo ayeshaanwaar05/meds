@@ -1,0 +1,87 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vsqrt.h for the primary calling header
+
+#include "Vsqrt__pch.h"
+#include "Vsqrt__Syms.h"
+#include "Vsqrt___024root.h"
+
+#ifdef VL_DEBUG
+VL_ATTR_COLD void Vsqrt___024root___dump_triggers__stl(Vsqrt___024root* vlSelf);
+#endif  // VL_DEBUG
+
+VL_ATTR_COLD void Vsqrt___024root___eval_triggers__stl(Vsqrt___024root* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vsqrt___024root___eval_triggers__stl\n"); );
+    Vsqrt__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    vlSelfRef.__VstlTriggered.setBit(0U, (IData)(vlSelfRef.__VstlFirstIteration));
+#ifdef VL_DEBUG
+    if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {
+        Vsqrt___024root___dump_triggers__stl(vlSelf);
+    }
+#endif
+}
+
+VL_ATTR_COLD void Vsqrt___024root___stl_sequent__TOP__0(Vsqrt___024root* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vsqrt___024root___stl_sequent__TOP__0\n"); );
+    Vsqrt__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Init
+    double __Vfunc_squareroot__0__val;
+    __Vfunc_squareroot__0__val = 0;
+    // Body
+    __Vfunc_squareroot__0__val = vlSelfRef.input_value;
+    {
+        if (VL_UNLIKELY(((__Vfunc_squareroot__0__val 
+                          < 0.0)))) {
+            VL_WRITEF_NX("Error: Negative input \342\200\224 square root undefined.\n",0);
+            vlSelfRef.__Vfunc_squareroot__0__Vfuncout = 0.0;
+            goto __Vlabel1;
+        }
+        vlSymsp->TOP____024unit.squareroot__Vstatic__tolerance = 1.00000000000000002e-08;
+        if ((__Vfunc_squareroot__0__val < 1.0)) {
+            vlSymsp->TOP____024unit.squareroot__Vstatic__start_pt 
+                = __Vfunc_squareroot__0__val;
+            vlSymsp->TOP____024unit.squareroot__Vstatic__end_pt = 1.0;
+        } else {
+            vlSymsp->TOP____024unit.squareroot__Vstatic__start_pt = 0.0;
+            vlSymsp->TOP____024unit.squareroot__Vstatic__end_pt 
+                = __Vfunc_squareroot__0__val;
+        }
+        {
+            while (1U) {
+                vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt 
+                    = (5.00000000000000000e-01 * (vlSymsp->TOP____024unit.squareroot__Vstatic__start_pt 
+                                                  + vlSymsp->TOP____024unit.squareroot__Vstatic__end_pt));
+                vlSymsp->TOP____024unit.squareroot__Vstatic__difference 
+                    = ((vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt 
+                        * vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt) 
+                       - __Vfunc_squareroot__0__val);
+                if ((([&]() {
+                                vlSelfRef.__Vfunc_abs__1__r 
+                                    = vlSymsp->TOP____024unit.squareroot__Vstatic__difference;
+                                vlSelfRef.__Vfunc_abs__1__Vfuncout 
+                                    = ((vlSelfRef.__Vfunc_abs__1__r 
+                                        < 0.0) ? (- vlSelfRef.__Vfunc_abs__1__r)
+                                        : vlSelfRef.__Vfunc_abs__1__r);
+                            }(), vlSelfRef.__Vfunc_abs__1__Vfuncout) 
+                     <= vlSymsp->TOP____024unit.squareroot__Vstatic__tolerance)) {
+                    goto __Vlabel2;
+                }
+                if ((vlSymsp->TOP____024unit.squareroot__Vstatic__difference 
+                     > 0.0)) {
+                    vlSymsp->TOP____024unit.squareroot__Vstatic__end_pt 
+                        = vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt;
+                } else {
+                    vlSymsp->TOP____024unit.squareroot__Vstatic__start_pt 
+                        = vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt;
+                }
+            }
+            __Vlabel2: ;
+        }
+        vlSelfRef.__Vfunc_squareroot__0__Vfuncout = vlSymsp->TOP____024unit.squareroot__Vstatic__mid_pt;
+        __Vlabel1: ;
+    }
+    vlSelfRef.result = vlSelfRef.__Vfunc_squareroot__0__Vfuncout;
+}
