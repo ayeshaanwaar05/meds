@@ -487,3 +487,17 @@ To make a strong and reliable design, engineers follow these principles:
 ## What I Learned
 
 This lecture showed that timing is crucial in digital circuits. It affects how fast and how reliably a circuit works. Problems like setup and hold violations can be fixed with pipelining or adding delays. Verification is necessary and can be done through simulation or formal proofs. Lastly, a good design is one that is fast, balanced, and strong enough to handle real-world changes.
+## References
+
+- https://www.youtube.com/watch?v=ubhxKNlOlRg&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=1
+
+- https://www.youtube.com/watch?v=U-4jmbm8inw&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=2
+
+- https://www.youtube.com/watch?v=smHJ1W7S-2Q&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=3
+
+- https://www.youtube.com/watch?v=KcP1ky8_U7w&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=6
+
+- https://www.youtube.com/watch?v=3Sqt0GIFPbc&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=7
+
+- https://www.youtube.com/watch?v=DBsDuQwpPsI&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=8
+
