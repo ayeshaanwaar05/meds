@@ -48,17 +48,22 @@ This lecture introduces what a computer really is and breaks down the core compo
 
 ### 5. What I Learned
 
-This lecture helped me understand that a computer is not just a machine that calculates, it’s a complete system made of carefully designed components that work together. I found it fascinating how something as small as a transistor plays such a huge role in building powerful systems. I also learned that hardware isn't one-size-fits-all. We choose between processors, FPGAs, and ASICs depending on the use case.
+- A computer is a system of coordinated components, not just a calculator.
 
-It also gave us a broader vision of the computing world by showing how different technologies like CPUs, GPUs, and custom chips are used across systems. We saw examples from companies like Microsoft, Google, Intel, and AMD, showing how real-world products are shaped by architectural choices.
+- Transistors play a key role in system design.
 
+- Hardware choices (CPU, FPGA, ASIC) depend on the application.
+
+- Different technologies serve different system needs.
+
+- Industry examples showed how architecture shapes real products.
 
 ---
 
 
 ## Lecture 2: Boolean Logic & Combinational Circuits
 
----
+
 
 ### 1. Logic Circuit Types
 
@@ -144,11 +149,15 @@ It uses shared logic resources and selects the operation via control signals.
 
 ### What I Learned
 
-This lecture gave me a solid starting point in understanding how digital systems work. I learned how basic building blocks like logic gates can be combined to create more useful parts like decoders, multiplexers, and ALUs.
+- Learned how logic gates form components like decoders, multiplexers, and ALUs.
 
-It also helped me see how we go from simple logic ideas to actual hardware in a computer. I now better understand how computers use these building blocks to make decisions and do calculations.
+- Understood the transition from logic concepts to actual hardware.
 
-Overall, this lecture helped me see how important combinational logic is for building fast and smart computers. It gave me a clearer picture of how math and logic work together to make modern computing possible.
+- Saw how computers use logic to make decisions and perform calculations.
+
+- Recognized the importance of combinational logic in building efficient systems.
+
+- Gained clarity on how math and logic power modern computing.
 
 ---
 # Lecture 3: Digital Logic and Sequential Circuits
@@ -201,8 +210,27 @@ Overall, this lecture helped me see how important combinational logic is for bui
 
 ---
 ## What I Learned 
-In this lecture, I learned how basic logic gates like AND, OR, and NOT are the building blocks of digital systems. I saw how components like decoders, multiplexers, and PLAs help create useful logic functions, and how even complex functions can be built using just NAND or NOR gates. I understood how comparators check if values are equal, how ALUs handle arithmetic and logic, and how tri-state buffers help with shared data lines. I learned how memory works using registers and address decoding, and how sequential circuits use flip-flops and latches to remember past inputs. I was introduced to Finite State Machines (FSMs), which change behavior based on current inputs and stored states, with two main types: Moore and Mealy. I also realized how important clock signals are for controlling timing in systems, and I learned about problems like metastability and the different types of memory used in computers. Finally, I found out that FPGAs use lookup tables (LUTs) to build any logic function, making them powerful and flexible. This lecture helped me see how digital systems are designed to process and control information.
+- Learned that AND, OR, and NOT gates are the foundation of digital systems.
 
+- Saw how decoders, multiplexers, and PLAs implement logic functions.
+
+- Understood that NAND/NOR gates can build any logic circuit.
+
+- Learned how comparators check equality and ALUs perform arithmetic/logic.
+
+- Explored tri-state buffers for managing shared data lines.
+
+- Understood memory using registers and address decoding.
+
+- Learned how flip-flops and latches store past inputs in sequential circuits.
+
+- Introduced to Finite State Machines (Moore and Mealy types).
+
+- Realized the role of clock signals and issues like metastability.
+
+- Learned about different memory types and FPGA flexibility using LUTs.
+
+- Gained insight into how digital systems process and control information.
 ---
 # Lecture 4: Understanding Finite State Machines (FSM) and Flip-Flops
 
@@ -245,7 +273,19 @@ States can be represented in different ways:
 ---
 ## What I Learned
 
-In this lecture, I understood how FSMs are essential for designing digital systems by controlling states and transitions based on inputs and outputs. I learned different ways to encode states, balancing the use of hardware and logic complexity. I also learned the difference between synchronous and asynchronous FSMs and their applications. The step-by-step design process, from defining states to implementing Verilog code, helped me grasp practical FSM creation. Studying flip-flops, especially the contrast between latches and flip-flops, clarified how memory elements manage timing and store states. Lastly, comparing Moore and Mealy machines showed how output logic influences the number of states and response time. This lecture deepened my understanding of designing reliable digital state machines.
+- Learned how FSMs control states and transitions in digital systems.
+
+- Explored different state encoding methods for hardware-efficiency balance.
+
+- Understood the difference between synchronous and asynchronous FSMs.
+
+- Followed a step-by-step FSM design process, including Verilog implementation.
+
+- Clarified timing and storage using latches vs. flip-flops.
+
+- Compared Moore and Mealy machines in terms of output logic and response.
+
+- Gained deeper understanding of reliable digital state machine design.
 
 ---
 # Lecture 5 – Introduction to Verilog and HDL Basics
@@ -414,7 +454,16 @@ Useful when reusing existing components
 Each approach has its strengths, and in practice, we often use a mix of both.
 
 #### What I Learned
-This lecture helped me understand how to write and organize Verilog code, the difference between modeling styles, and how to build and simulate sequential logic like FSMs. I also learned best practices to keep designs clean and reliable, and how to test them using testbenches.
+- Learned how to write and organize Verilog code.
+
+- Understood different modeling styles (behavioral, structural, etc.).
+
+- Built and simulated sequential logic, including FSMs.
+
+- Learned best practices for clean and reliable design.
+
+- Gained experience in testing designs using testbenches.
+
 
 ---
 # Lecture 6 
@@ -486,7 +535,15 @@ To make a strong and reliable design, engineers follow these principles:
 
 ## What I Learned
 
-This lecture showed that timing is crucial in digital circuits. It affects how fast and how reliably a circuit works. Problems like setup and hold violations can be fixed with pipelining or adding delays. Verification is necessary and can be done through simulation or formal proofs. Lastly, a good design is one that is fast, balanced, and strong enough to handle real-world changes.
+- Timing is critical for circuit speed and reliability.
+
+- Setup and hold violations can be addressed with pipelining or delays.
+
+- Verification is done through simulation or formal methods.
+
+- Good designs are fast, balanced, and robust to real-world variations.
+
+---
 ## References
 
 - https://www.youtube.com/watch?v=ubhxKNlOlRg&list=PL5Q2soXY2Zi9Eo29LMgKVcaydS7V1zZW3&index=1
