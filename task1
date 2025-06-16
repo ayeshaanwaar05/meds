@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdint.h>
+void binaryConversion(int16_t num){
+    int binary[16];
+    for (int i=16;i<=0;i--){
+        binary[i]=num%2;
+        num=num/2;
+    }
+    for (int i=0;i<=15;i++){
+        printf("%d",binary[i]);
+        if ((i + 1) % 4 == 0) printf(" "); 
+    }
+}
+int16_t twosComplement(int16_t num) {
+    return ~num + 1;
+}
+int main() {
+    int16_t number;
+
+    printf("Enter a signed 16-bit number (-32768 to 32767): ");
+    scanf("%hd", &number);
+
+    int16_t complement = twosComplement(number);
+
+    printf("\nOriginal number (decimal): %d\n", number);
+    printf("Original number (binary):  ");
+    printBinarySimple(number);
+
+    printf("\n\nTwo's complement (decimal): %d\n", complement);
+    printf("Two's complement (binary):  ");
+    printBinarySimple(complement);
+
+    printf("\n");
+
+    return 0;
+}
